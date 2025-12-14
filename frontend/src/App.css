@@ -1,0 +1,205 @@
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* AUTH BOXES */
+.login-box,
+.register-box,
+.auth-card {
+  max-width: 420px;
+  margin: 80px auto;
+  padding: 36px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.08);
+}
+
+.login-box h1,
+.register-box h1,
+.auth-card h1 {
+  text-align: center;
+  margin-bottom: 22px;
+  font-weight: 600;
+  color: #4c1d95;
+}
+
+/* BUTTONS */
+button {
+  background: linear-gradient(135deg, #f9a8d4, #c084fc);
+  border: none;
+  color: #3b0764;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(192, 132, 252, 0.4);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+header h2 {
+  font-weight: 600;
+  color: #4c1d95;
+}
+
+/* FILTERS */
+.filters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.65);
+  padding: 16px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+}
+
+/* ADMIN FORM */
+.admin-form {
+  background: linear-gradient(135deg, #ddd6fe, #ecfeff);
+  padding: 22px;
+  border-radius: 18px;
+  margin-bottom: 30px;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.08);
+}
+
+.admin-form h3 {
+  margin-bottom: 14px;
+  font-weight: 600;
+  color: #5b21b6;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* CARDS */
+.card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  padding: 22px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #4c1d95;
+}
+
+.card p {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.card button {
+  width: 100%;
+}
+
+.card button + button {
+  margin-top: 8px;
+  background: linear-gradient(135deg, #fb7185, #f43f5e);
+  color: #ffffff;
+}
+
+/* ERRORS */
+.error-text,
+p[style*="color: red"] {
+  background: rgba(244, 63, 94, 0.15);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #9f1239;
+}
+
+/* AUTH PAGE */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CHECKBOX */
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 16px 0;
+  font-size: 14px;
+}
+
+.checkbox-row input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #22c55e;
+  cursor: pointer;
+}
+
+.checkbox-row span {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* FOOTER */
+.auth-footer {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+/* QUICK SEARCH */
+.quick-search {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.quick-btn {
+  padding: 8px 16px;
+  border-radius: 22px;
+  border: none;
+  background: rgba(192, 132, 252, 0.15);
+  color: #4c1d95;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.quick-btn:hover {
+  background: #c084fc;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
