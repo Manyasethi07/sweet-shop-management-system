@@ -1,156 +1,141 @@
-# 🍬 Sweet Shop Management System
+🍬 Sweet Shop Management System
+A Full-Stack Inventory & Purchase Management Application
 
-The Sweet Shop Management System is a full-stack web application developed as part of the **AI Kata Assessment**.  
-It enables users to browse and purchase sweets, while administrators can securely manage inventory using role-based access control.
+The Sweet Shop Management System is a full-stack web application developed as part of the AI Kata Assessment.
+It simulates a real-world sweet shop, enabling customers to browse and purchase sweets while allowing administrators to securely manage inventory through role-based access control.
 
----
+🎯 Focus Areas: Clean Architecture • Secure Authentication • Role-Based Access • Automated Testing
 
-## 📌 Project Explanation
+🌟 Project Highlights
+🔐 Secure authentication using JWT
+👥 Role-based access for Admin and Users
+🍭 Real-time sweet inventory management
+🧪 Fully tested backend with Pytest
+⚡ FastAPI + React (Vite) modern stack
 
-The Sweet Shop Management System is designed to simulate a real-world sweet shop environment with secure authentication and clean system design. The application supports two types of users:
+📖 Project Overview
+The application is designed with clean system design, modular architecture, and maintainability in mind.
 
-- **Admin** – Can add, update, delete, and restock sweets.
-- **User** – Can browse, search, filter, and purchase sweets.
+👤 User Roles
+👨‍💼 Admin
+Add, update, delete sweets
+Restock inventory
+Access admin-only dashboards and controls
 
-The backend is built using **FastAPI**, following RESTful principles with **JWT-based authentication** and role-based authorization.  
-The frontend is implemented as a modern **single-page application (SPA)** using **React**, ensuring a responsive and user-friendly interface.
+🧑 User
+Browse available sweets
+Search by name
+Filter by category
+Purchase sweets with automatic stock updates
 
-The project emphasizes clean coding practices, modular architecture, automated testing, and maintainable design.
+The backend is built using FastAPI, following RESTful principles with JWT-based authentication and strict role-based authorization.
+The frontend is a responsive Single Page Application (SPA) developed using React, providing a smooth and intuitive user experience.
 
----
+🛠 Tech Stack
+🔧 Backend
+FastAPI
+Python
+SQLite
+SQLAlchemy
+JWT Authentication
+Pytest
+🎨 Frontend
+React (Vite)
+Axios
+CSS
 
-## 🛠 Tech Stack
+✨ Features
+🔐 Authentication & Security
+User and Admin registration & login
+JWT-based authentication
+Strict role-based access control
 
-### Backend
-- FastAPI
-- Python
-- SQLite
-- SQLAlchemy
-- JWT Authentication
-- Pytest
+🍬 Sweet Inventory Management
+View all available sweets
+Search sweets by name
+Filter sweets by category
+Purchase sweets with automatic stock reduction
+Purchase disabled when stock is unavailable
 
-### Frontend
-- React (Vite)
-- Axios
-- CSS
+🧑‍💼 Admin Capabilities
 
----
+Add new sweets
+Edit sweet details
+Delete sweets
+Restock inventory
+Admin-only UI components
 
-## ✨ Features
+🎨 UI & UX
 
-### Authentication & Authorization
-- User registration and login
-- Admin registration and login
-- JWT-based authentication
-- Strict role-based access control
+Centered, card-based authentication screens
+Responsive dashboard layout
+Clean, modern, and intuitive interface
+Quick search options for popular sweets
 
-### Sweet Management
-- View all available sweets
-- Search sweets by name
-- Filter sweets by category
-- Purchase sweets with automatic stock reduction
-- Purchase disabled when stock is zero
-
-### Admin Functionalities
-- Add new sweets
-- Update sweet details
-- Delete sweets
-- Restock inventory
-- Admin-only UI components
-
-### UI & UX
-- Centered, card-based login and registration pages
-- Responsive dashboard layout
-- Clean and intuitive user interface
-- Quick search options for popular sweets
-
----
-
-## ⚙️ Local Setup & Execution Guide
-
-### Backend Setup
-
-```bash
+⚙️ Local Setup & Execution
+🔧 Backend Setup
 cd backend
 python -m venv .venv
-.venv\Scripts\activate   # On Windows
-pip install -r requirements.txt
+.venv\Scripts\activate   # Windows
 uvicorn app.main:app --reload
-```
 
-Backend will be available at:
-- http://127.0.0.1:8000  
-- API Docs: http://127.0.0.1:8000/docs
+📍 Backend URLs
+API: http://127.0.0.1:8000
+Swagger Docs: http://127.0.0.1:8000/docs
 
----
-
-### Frontend Setup
-
-```bash
+🌐 Frontend Setup
 cd frontend
 npm install
 npm run dev
-```
 
-Frontend will be available at:
-- http://localhost:5173
+📍 Frontend URL
+http://localhost:5173
+🖼 Application Screenshots
 
----
+📸 The following screenshots demonstrate the application flow:
 
-## 🖼 Application Screenshots
+Login & Registration Pages
+Admin Dashboard (Add / Manage Sweets)
+User Dashboard (Browse & Purchase Sweets)
+Automated Test Execution (Pytest)
+#All screenshots are available in the screenshots/ directory.
 
-The following screenshots demonstrate the final working application:
-- Login Page
-- Admin Dashboard (Add / Manage Sweets)
-- User Dashboard (Browse & Purchase Sweets)
-- Automated Test Execution (pytest)
+🧪 Testing & Quality Assurance
+The backend is fully covered with automated tests using Pytest.
+✅ Test Coverage Includes:
+User & Admin authentication
+Role-based authorization checks
+Sweet CRUD operations
+Inventory purchase and stock validation logic
 
-Screenshots are stored in the `screenshots/` directory.
+✔️ All tests were executed locally and passed successfully.
 
----
+🔁 Test-Driven Development (TDD)
 
-## 🧪 Test Report
+The backend follows Test-Driven Development (TDD) principles using the Red–Green–Refactor cycle:
+🔴 Red – Write failing tests to define expected behavior
+🟢 Green – Implement minimal logic to pass tests
+🔵 Refactor – Improve code quality and structure
 
-The backend application is covered with automated tests using **pytest**.  
-The test suite validates:
-- User and admin authentication
-- Role-based access control
-- Sweet creation and management
-- Inventory purchase logic and stock validation
+This approach ensured reliability, confidence, and maintainability throughout development.
 
-All tests were executed locally and passed successfully.
+🤖 AI Usage Declaration
+AI tools were used responsibly and minimally as learning and productivity aids.
+🧠 AI Tool Used
+ChatGPT
 
----
+📌 How AI Assisted
+Understanding FastAPI best practices
+Clarifying JWT authentication & role-based access
+Assisting with selected Pytest unit tests
+Debugging backend issues
+Referencing TDD concepts and workflows
 
-## 🔁 Test-Driven Development (TDD)
+📝 Reflection
 
-The backend logic follows **Test-Driven Development (TDD)** principles.  
-Core functionalities such as authentication, sweet management, and inventory handling were validated using automated tests.
+AI was not used to generate the full codebase.
+All AI-assisted suggestions were carefully reviewed, modified, and implemented manually to ensure originality, correctness, and maintainability.
 
-The **Red–Green–Refactor** approach was applied by:
-- Writing tests to define expected behavior (Red)
-- Implementing minimal logic to pass the tests (Green)
-- Refactoring code to improve clarity and maintainability (Refactor)
+🚀 Conclusion
 
-This approach ensured reliability and confidence during development.
-
----
-
-## 🤖 My AI Usage
-
-AI tools were used in a limited and supportive manner during the development of this project.  
-I primarily used **ChatGPT** as a guidance and learning tool for selected backend-related tasks, while the overall system design, implementation, and logic were done manually.
-
-### AI Tools Used
-- ChatGPT
-
-### How AI Was Used
-- Assistance in understanding FastAPI best practices and backend project structuring
-- Clarification of JWT-based authentication flows and role-based authorization
-- Help in writing and correcting selected backend unit tests using pytest
-- Debugging specific backend issues and understanding test failures
-- Referencing explanations for concepts like Test-Driven Development (TDD) and Red–Green–Refactor
-
-### Reflection on AI Usage
-AI was used as a productivity and learning aid rather than for generating the entire codebase.  
-Only selected backend components benefited from AI guidance, and all suggestions were reviewed, modified, and implemented manually to ensure correctness and maintainability without over-reliance on AI tools.
+This project demonstrates the implementation of a secure, scalable, and well-tested full-stack application, following industry-standard practices in backend development, frontend design, and software testing.
